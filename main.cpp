@@ -16,10 +16,10 @@ int main()
 {
     MethodIntegrals integral(0, PI / 2, 10);
     integral.setSidesOfFigure(10, 5);
-    std::cout << integral.centralRectangleIntegral(function) << std::endl;
-    std::cout << integral.leftRectangleIntegral(function) << std::endl;
-    std::cout << integral.rightRectangleIntegral(function) << std::endl;
-    std::cout << integral.simpsonIntegral(function) << std::endl;
-    std::cout << integral.trapezoidalIntegral(function) << std::endl;
+    std::cout << 40 * integral.centralRectangleIntegral(function) << std::endl;
+    std::cout << 40 * integral.leftRectangleIntegral(function) << std::endl;
+    std::cout << 40 * integral.rightRectangleIntegral(function) << std::endl;
+    std::cout << 40 * integral.simpsonIntegral(function) << std::endl;
+    std::cout << 40 * integral.trapezoidalIntegral(function) << std::endl;
     return 0;
 }
