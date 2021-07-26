@@ -14,12 +14,14 @@ float function(float a, float b, float phi)
 
 int main()
 {
+    int a = 10;
+    int b = 5;
     MethodIntegrals integral(0, PI / 2, 10);
-    integral.setSidesOfFigure(10, 5);
-    std::cout << 40 * integral.centralRectangleIntegral(function) << std::endl;
-    std::cout << 40 * integral.leftRectangleIntegral(function) << std::endl;
-    std::cout << 40 * integral.rightRectangleIntegral(function) << std::endl;
-    std::cout << 40 * integral.simpsonIntegral(function) << std::endl;
-    std::cout << 40 * integral.trapezoidalIntegral(function) << std::endl;
+    integral.setSidesOfFigure(a, b);
+    std::cout << 4 * a * integral.centralRectangleIntegral(function) << std::endl;
+    std::cout << 4 * a * integral.leftRectangleIntegral(function) << std::endl;
+    std::cout << 4 * a * integral.rightRectangleIntegral(function) << std::endl;
+    std::cout << 4 * a * integral.simpsonIntegral(function) << std::endl;
+    std::cout << 4 * a * integral.trapezoidalIntegral(function) << std::endl;
     return 0;
 }
